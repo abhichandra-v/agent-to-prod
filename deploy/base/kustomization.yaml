@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: agent
+resources:
+  - namespace.yaml
+  - deployment.yaml
+  - service.yaml
+  - networkpolicy.yaml
+  - pdb.yaml
+# secret.example.yaml is intentionally NOT included — create the real Secret
+# out-of-band (see its header). Keeping it out of kustomize avoids shipping a
+# placeholder secret to the cluster.

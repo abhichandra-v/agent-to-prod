@@ -1,0 +1,11 @@
+.git
+.github
+deploy/
+*.md
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+*.env
+.env*
